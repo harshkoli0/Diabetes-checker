@@ -54,12 +54,17 @@ The model uses the following input features:
 daibites_project/
 │
 ├── app.py                 # ✅ Main Flask application
-├── daibites.pkl           # ✅ Trained Machine Learning model (Logistic Regression, etc.)
+├── daibites.pkl 
+  
+                          
+                          # ✅ Trained Machine Learning model (Logistic Regression, etc.)
 │
 ├── templates/             # ✅ HTML templates
 │   ├── index.html         #     Input form page
 │   └── result.html        #     (Optional) Separate result page
 │
+
+
 ├── static/                # ✅ Static files (CSS, JS, images if needed)
 │
 ├── requirements.txt       # ✅ Project dependencies
