@@ -51,3 +51,13 @@ The model uses the following input features:
 
 ## 📂 Project Structure
 
+daibites_project/
+│
+├── app.py # Flask app
+├── daibites.pkl # Trained ML model
+├── templates/
+│ ├── index.html # Main page
+│ └── result.html # Result page (optional)
+├── static/ # (Optional) CSS or assets
+├── requirements.txt # Project dependencies
+└── README.md # Project descriptio
