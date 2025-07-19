@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Diabetes Prediction Web App</h1>
+
+    <form action="/predict" method="post">
+        <input type="number" name="Pregnancies" placeholder="Pregnancies" required><br>
+        <input type="number" name="Glucose" placeholder="Glucose" required><br>
+        <input type="number" name="BloodPressure" placeholder="Blood Pressure" required><br>
+        <input type="number" name="SkinThickness" placeholder="Skin Thickness" required><br>
+        <input type="number" name="Insulin" placeholder="Insulin" required><br>
+        <input type="number" name="BMI" placeholder="BMI" step="any" required><br>
+        <input type="number" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" step="any" required><br>
+        <input type="number" name="Age" placeholder="Age" required><br>
+        <input type="submit" value="Predict">
+    </form>
+    <div class="result-box">
+        <h2>{{ prediction_text }}</h2>
+        <a href="/">Back to Home</a>
+    </div>
+
+</body>
+</html>
+
